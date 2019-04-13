@@ -1,0 +1,280 @@
+.wrapper {
+	height: 700vh;
+	background: -o-linear-gradient(#ffe6cc, #fff2e6);
+	background: -moz-linear-gradient(#ffe6cc, #fff2e6);
+	background: -webkit-linear-gradient(#ffe6cc, #fff2e6);
+	background: -ms-linear-gradient(#ffe6cc, #fff2e6);
+	background: linear-gradient(#ffe6cc, #fff2e6);
+}
+
+.container {
+	padding-top: 90px;
+}
+
+.backgrd {
+	background-color: lightgray;
+	width: 50%;
+	height: 300px;
+	text-align: center;
+	margin: 0 auto;
+	border-radius: 10px;
+}
+
+.indexLog {
+	text-align: center;
+	font-size: 25px;
+}
+
+/* login page*/
+.logform {
+	margin: 0 auto;
+	background-color: lightgray;
+	width: 50%;
+	height: 450px;
+	padding-top: 30px;
+	padding-left: 30px;
+	padding-right: 30px;
+	border-radius: 15px;
+	border: 1px solid gray;
+}
+
+.logUser {
+	margin: 0 auto;
+	text-align: right;
+	font-size: 20px;
+	color: gray;
+	padding-bottom: 20px;
+}
+
+.form-group {
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-top: 15px;
+	line-height: 10px;
+}
+
+#password_container, #username_container {
+	position: relative;
+	padding: 0;
+	margin: 0;
+}
+
+#inputpass, #inputus {
+	height: 45px;
+	margin: 0;
+	padding-left: 55px;
+	font-size: 20px;
+	border: 1px solid gray;
+}
+
+#glyp_pass, #glyp_us {
+	position: absolute;
+	top: 14px;
+	bottom: 8px;
+	left: 20px;
+	font-size: 20px;
+	color: gray;
+}
+
+.text-danger {
+	font-size: 18px;
+	text-align: center;
+}
+
+.prm {
+	text-align: center;
+	font-size: 20px;
+}
+
+/* admin page*/
+.admin {
+	margin: 0 auto;
+	background-color: lightgray;
+	border: 1px solid gray;
+	width: 50%;
+	height: 200px;
+	text-align: center;
+	padding-top: 25px;
+	border-radius: 10px 10px 0 0;
+}
+
+.adminlink {
+	margin: 0 auto;
+	border: 1px solid gray;
+	background-color: white;
+	width: 50%;
+	height: 550px;
+	text-align: center;
+	line-height: 35px;
+	padding-top: 10px;
+	font-size: 25px;
+	border-radius: 0 0 10px 10px;
+}
+
+.centrlink {
+	text-align: center;
+	padding-top: 15px;
+	font-size: 22px;
+}
+
+/* changeUserPassw page*/
+.bl {
+	color: blue;
+}
+
+.lb {
+	color: lightblue;
+}
+
+.gr {
+	color: green;
+}
+
+/* allFilms page*/
+.title3 {
+	text-align: center;
+	padding-bottom: 15px;
+}
+
+.addButt {
+	padding-bottom: 20px;
+}
+
+.table {
+	font-size: 18px;
+	padding-left: 70px;
+	padding-right: 70px;
+}
+
+.table tbody tr:hover {
+	background-color: #e6e6e6;
+}
+
+.table th {
+	background-color: lightgray;
+}
+
+.title0 {
+	text-align: center;
+}
+
+.my-error-class {
+	color: red;
+	padding-top: 10px;
+	font-size: 18px;
+}
+
+/* rentNewFilm page*/
+h3.bg-info {
+	background-color: #e6f2ff;
+	text-align: center;
+}
+
+/* selFilmInfo page*/
+.userInf {
+	margin: 0 auto;
+	background-color: lightgray;
+	width: 30%;
+	height: 350px;
+	text-align: left;
+	padding-left: 30px;
+	padding-top: 10px;
+	border-radius: 10px;
+}
+
+.userInf1 {
+	margin: 0 auto;
+	background-color: lightgray;
+	width: 70%;
+	height: 90px;
+	text-align: center;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 10px;
+	border-radius: 10px;
+	font-size: 18px;
+}
+
+.userInf2 {
+	padding-left: 10px;
+	padding-right: 50px;
+	text-align: left;
+	font-size: 18px;
+}
+
+.stat {
+	padding-left: 150px;
+	padding-right: 150px;
+}
+
+h4.bg-info {
+	font-size: 25px;
+}
+
+/* userHome page*/
+.user1 {
+	margin: 0 auto;
+	background-color: lightgray;
+	border: 1px solid gray;
+	width: 50%;
+	height: 200px;
+	text-align: center;
+	padding-top: 10px;
+	border-radius: 10px 10px 0 0;
+}
+
+.userlink {
+	margin: 0 auto;
+	border: 1px solid gray;
+	background-color: white;
+	width: 50%;
+	height: 300px;
+	text-align: center;
+	line-height: 35px;
+	padding-top: 10px;
+	font-size: 25px;
+	border-radius: 0 0 10px 10px;
+}
+
+/* rentedFilmsPerUser page*/
+.usertable1 {
+	padding-left: 150px;
+	padding-right: 150px;
+}
+
+/* accessDenied page*/
+.accden {
+	margin: 0 auto;
+	height: 250px;
+	text-align: center;
+	padding-top: 10px;
+}
+
+h1.bg-danger {
+	font-size: 50px;
+}
+
+h2.bg-danger {
+	font-size: 25px;
+}
+
+/* userSelReq page*/
+.userSel {
+	margin: 0 auto;
+	height: 250px;
+	text-align: center;
+	padding-top: 10px;
+}
+
+/* changeUserPassw page*/
+.logformCP {
+	margin: 0 auto;
+	background-color: lightgray;
+	width: 50%;
+	height: 550px;
+	padding-top: 30px;
+	padding-left: 30px;
+	padding-right: 30px;
+	border-radius: 15px;
+	border: 1px solid gray;
+}

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	version="3.0">
+
+	<display-name>NewVideoClubProject</display-name>
+
+	<listener>
+		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+	</listener>
+
+	<!-- Spring xml configuration files -->
+	<context-param>
+		<param-name>contextConfigLocation</param-name>
+		<param-value>
+		    /WEB-INF/context/applicationContext.xml
+		    /WEB-INF/context/spring-database.xml
+		    /WEB-INF/context/spring-security.xml
+		</param-value>
+	</context-param>
+
+	<!-- Spring MVC -->
+	<servlet>
+		<servlet-name>springmvc-dispatcher</servlet-name>
+		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+		<init-param>
+			<param-name>contextConfigLocation</param-name>
+			<param-value>/WEB-INF/context/springmvc-dispatcher-servlet.xml</param-value>
+		</init-param>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>springmvc-dispatcher</servlet-name>
+		<url-pattern>/</url-pattern>
+	</servlet-mapping>
+
+	<!-- Spring Security Filter -->
+	<filter>
+		<filter-name>springSecurityFilterChain</filter-name>
+		<filter-class>org.springframework.web.filter.DelegatingFilterProxy</filter-class>
+	</filter>
+
+	<filter-mapping>
+		<filter-name>springSecurityFilterChain</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+
+	<!-- Character Set Filter for UTF-8 -->
+	<filter>
+		<filter-name>CharacterSetFilter</filter-name>
+		<filter-class>com.snezana.videoclub.util.CharacterSetFilter</filter-class>
+	</filter>
+
+	<filter-mapping>
+		<filter-name>CharacterSetFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+
+	<!-- Session -->
+	<listener>
+		<listener-class>com.snezana.videoclub.configuration.SessionListener</listener-class>
+	</listener>
+
+	<!-- Entry for custom time functions tld file; static time functions are 
+		defined in FilmTimeUtil.java -->
+	<jsp-config>
+		<taglib>
+			<taglib-uri>/WEB-INF/tld/timeFunctions</taglib-uri>
+			<taglib-location>/WEB-INF/tld/timeFunctions.tld</taglib-location>
+		</taglib>
+	</jsp-config>
+
+</web-app>

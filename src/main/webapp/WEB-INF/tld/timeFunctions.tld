@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<taglib 
+    xmlns="http://java.sun.com/xml/ns/javaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-jsptaglibrary_2_1.xsd"
+    version="2.1">
+
+    <display-name>Custom Time Functions</display-name>    
+    <tlib-version>1.0</tlib-version>
+      <short-name>ctfun</short-name>
+    <uri>/WEB-INF/tld/timeFunctions</uri>
+
+<!-- create taglib functions from FilmTimeUtil.java static methods -->
+    <function>
+        <name>convertTime</name>
+        <function-class>com.snezana.videoclub.util.FilmTimeUtil</function-class>
+        <function-signature>String convertTime(long)</function-signature>
+    </function>
+    
+    <function>
+        <name>remainingTime</name>
+        <function-class>com.snezana.videoclub.util.FilmTimeUtil</function-class>
+        <function-signature>String remainingTime(long, long)</function-signature>
+    </function>   
+    
+    <function>
+        <name>remainOrExceed</name>
+        <function-class>com.snezana.videoclub.util.FilmTimeUtil</function-class>
+        <function-signature>boolean remainOrExceed(long, long)</function-signature>
+    </function>
+</taglib>
