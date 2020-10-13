@@ -22,7 +22,7 @@
 		<logback.version>1.0.13</logback.version>
 		<org.slf4j-version>1.7.5</org.slf4j-version>
 		<!-- Test -->
-		<junit.version>4.11</junit.version>
+		<junit.version>4.13.1</junit.version>
 		<tomcat.deploy.dir>/home/snezana/apache-tomcat-8.0.46/webapps/</tomcat.deploy.dir>
 	</properties>
 
